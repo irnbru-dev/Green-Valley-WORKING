@@ -1,0 +1,45 @@
+.place-picker {
+  background-image: url(../../img/place-picker-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 50px;
+
+
+//   &__inner {
+//     // margin: 0 auto;
+//     // text-align: center;
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+// }
+
+  &__title {
+    padding-top: 45px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .place-picker {
+    &__cards-inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .place-picker {
+    &__cards-inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
