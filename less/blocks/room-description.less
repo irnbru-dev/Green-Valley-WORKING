@@ -22,8 +22,30 @@
     list-style: none;
   }
 
+  &__list-item {
+    position: relative;
+  }
+
+  &__list-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid @orange;
+    border-bottom: 2px solid @orange;
+    transform: rotate(225deg);
+    left: -17px;
+    right: 370px;
+    top: 5px;
+  }
+
   &__booking-price {
     text-align: center;
+  }
+
+  &__price {
+    margin-top: 20px;
   }
 
   &__price--orange-col {

@@ -1,10 +1,11 @@
 .roomslist-promo {
   background-image: url(../../img/promo-bg.jpg);
+  background-size: cover;
   color: #fff;
 
   &__inner {
     min-width: 320px;
-    padding: 0 10px;
+    padding: 40px 10px;
     margin: 0 auto;
     text-align: center;
   }
@@ -15,7 +16,19 @@
   }
 
   &__txt {
+    display: none;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .roomslist-promo {
+
+    &__txt {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
