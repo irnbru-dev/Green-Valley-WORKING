@@ -18,6 +18,14 @@
     color: @orange;
   }
 
+  &__photo {
+    width: 100%;
+  }
+
+  &__photo img {
+    width: 100%;
+  }
+
   &__list {
     list-style: none;
   }
@@ -50,5 +58,33 @@
 
   &__price--orange-col {
     color: @orange;
+  }
+
+  &__facilities {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .room-description {
+
+    &__photo-facilities-inner {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__photo {
+      width: 400px;
+      order: 2;
+    }
+
+    &__photo img {
+      width: 400px;
+    }
+
+    &__facilities {
+      order: 1;
+    }
+
   }
 }

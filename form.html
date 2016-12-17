@@ -35,24 +35,25 @@
 </header>
 
 
-<section class="booking-steps">
-  <div class="booking-steps__inner">
-    <h1 class="booking-steps__title">Бронирование</h1>
-    <div class="booking-steps__title-txt">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78120000000" class="booking-steps__phone-link">+7 812 777-55-88</a></div>
+<section class="booking-top">
+    <h1 class="booking-top__title">Бронирование</h1>
+    <div class="booking-top__title-txt">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78120000000" class="booking-top__phone-link">+7 812 777-55-88</a>
+    </div>
+</section>
 
-
-  <section class="booking-steps__data">
-    <p class="booking-steps__step-counter">ШАГ 1</p>
-    <h2>Дата отдыха</h2>
-    <div class="booking-steps__data-inner">
-     <div class="booking-steps__data-check-inout">
-       <label><h3 class="booking-steps__data-check-in-title">Дата въезда</h3>
+  <form>
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 1</p>
+    <h2 class="booking-step__title">Дата отдыха</h2>
+    <div class="booking-form__data-inner">
+     <div class="booking-form__data-check-inout">
+       <label><h3 class="booking-form__data-title">Дата въезда</h3>
        <input type="number" min="1" max="31" placeholder="ДД"></label>
        <input type="number" min="1" max="12" placeholder="ММ">
        <input type="number" min="2000" max="2030" placeholder="ГГГГ">
       </div>
-      <div class="booking-steps__data-check-inout">
-        <label><h3 class="booking-steps__data-check-out-title">Дата выезда</h3>
+      <div class="booking-form__data-check-inout">
+        <label><h3 class="booking-form__data-title">Дата выезда</h3>
         <input type="number" min="1" max="31" placeholder="ДД"></label>
         <input type="number" min="1" max="12" placeholder="ММ">
         <input type="number" min="2000" max="2030" placeholder="ГГГГ">
@@ -61,23 +62,25 @@
 
   </section>
 
-  <section class="booking-steps__place">
-    <p class="booking-steps__step-counter">ШАГ 2</p>
-    <h2>Место проживания</h2>
-    <label><input type="radio" name="place">Отель</label>
-    <label><input type="radio" name="place">Коттедж</label>
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 2</p>
+    <h2 class="booking-step__title">Место проживания</h2>
+    <div class="booking-form__place">
+      <label><input type="radio" name="place">Отель</label>
+      <label><input type="radio" name="place">Коттедж</label>
+    </div>
   </section>
 
-  <section class="booking-steps__type">
-    <p class="booking-steps__step-counter">ШАГ 3</p>
-    <h2>Тип коттеджа</h2>
-    <div class="booking-steps__cottage-type">
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 3</p>
+    <h2 class="booking-step__title">Тип коттеджа</h2>
+    <div class="booking-form__cottage-type">
       <label>Флагман<input type="radio" name="cottage-type" value="flagman"></label>
       <label>Озерный<input type="radio" name="cottage-type" value="ozerny"></label>
       <label>Ольховка<input type="radio" name="cottage-type" value="olhovka"></label>
       <label>Портовый<input type="radio" name="cottage-type" value="portovy"></label>
     </div>
-    <div class="booking-steps__cottage-type-description-icons">
+    <div class="booking-form__cottage-type-description-icons">
       <span>Площадь 100м</span>
       <span>3 комнаты</span>
       <span>5 спальных мест</span>
@@ -86,20 +89,20 @@
     </div>
   </section>
 
-  <section class="booking-steps__personal-info">
-    <p class="booking-steps__step-counter">ШАГ 4</p>
-    <h2>Персональная информация</h2>
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 4</p>
+    <h2 class="booking-step__title">Персональная информация</h2>
     <input type="text" placeholder="ИМЯ">
     <input type="text" placeholder="ФАМИЛИЯ">
     <label><input type="tel" placeholder="НОМЕР ТЕЛЕФОНА"> Мы свяжемся с вами в случае небходимости.</label>
     <label><input type="email" placeholder="E-MAIL"> На этот адрес мы вышлем вам подверждение о забронированном номере</label>
   </section>
 
-  <section class="booking-steps__payment">
-    <p class="booking-steps__step-counter">ШАГ 5</p>
-    <h2>Способ оплаты</h2>
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 5</p>
+    <h2 class="booking-step__title">Способ оплаты</h2>
 
-  <!-- Не хватает оберток -->
+ <!--  Не хватает оберток -->
     <label><input type="radio" name="payment-way" value="pay-on-place"> По приезду</label>
     <p>Вы можете внести оплату по факту заселения</p>
     <label><input type="radio" name="payment-way" value="pay-now"> Сейчас</label>
@@ -111,15 +114,16 @@
     <label>Действует до <input type="number" placeholder="01 / 2018"></label>
   <!-- Конец -->
 
-    <div class="booking-steps__payment-summ">
-      <h3 class="booking-steps__payment-summ-title">К оплате</h3>
-      <p class="booking-steps__payment-summ-txt">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
+    <div class="booking-form__payment-summ">
+      <h3 class="booking-form__payment-summ-title">К оплате</h3>
+      <p class="booking-form__payment-summ-txt">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
     </div>
 
 
-    <a href="" class="btn btn--bg-green">Забронировать</a>
+   <a href="" class="btn btn--bg-green">Забронировать</a>
   </div>
 </section>
+</form>
 
 <footer class="page-footer">
   <div class="page-footer__inner">

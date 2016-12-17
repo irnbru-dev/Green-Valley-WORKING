@@ -26,7 +26,6 @@
     background-image: url(../../img/family-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    // width: 100%;
     padding-top: 20px;
     padding-bottom: 290px;
   }
@@ -184,26 +183,52 @@
       display: block;
     }
 
-    &__options-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+    // &__options-list {
+    //   display: flex;
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    //   justify-content: center;
       // width: 100%;
       // margin: 0 100px;
-    }
+    // }
 
-    &__options-list-item {
-      margin-right: 10px;
-      width: 90px;
-      border: 1px solid red;
-      // width: ;
-    }
+    // &__options-list-item {
+    //   margin-right: 10px;
+    //   width: 90px;
+    //   border: 1px solid red;
+    //   // width: ;
+    // }
 
     &__type-title {
       margin-bottom: 20px;
     }
-  }
+
+
+    &__options-list {
+      margin: 30px 210px;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-between;
+    }
+
+    &__options-list li {
+      width: 80px;
+      margin-bottom: 27px;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      vertical-align: top;
+      line-height: 18px;
+    }
+
+    &__options-list img {
+      margin-bottom: 15px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -242,7 +267,29 @@
     }
 
     &__options-list {
-      flex-wrap: no-wrap;
+      margin: 30px 230px;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-between;
+    }
+
+    &__options-list li {
+      width: 80px;
+      margin-bottom: 27px;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      vertical-align: top;
+      line-height: 18px;
+    }
+
+    &__options-list img {
+      margin-bottom: 15px;
     }
   }
-}
+}}

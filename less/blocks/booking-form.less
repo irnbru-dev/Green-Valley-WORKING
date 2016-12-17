@@ -1,0 +1,107 @@
+.booking-form {
+
+  // STEP 1 DATA
+
+  &__data-inner {
+    text-align: center;
+  }
+
+  &__data-check-inout {
+    color: @gray-darker;
+  }
+
+  &__data-title {
+    padding-top: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__data-check-inout input[type=number]{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+  @media (min-width: 768px) {
+
+    .booking-form {
+
+    &__data-check-inout {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    &__data-check-inout:last-child {
+      margin-right: 0;
+    }
+}
+  @media (min-width: 1200px) {
+
+    .booking-form {
+
+    &__data-check-inout {
+      background-color: #fff;
+      padding: 0 20px;
+      padding-bottom: 50px;
+    }
+  }
+}}
+
+// STEP 2 PLACE
+
+.booking-form {
+  &__place {
+    text-align: center;
+    width: 310px;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+  }
+
+  &__place label {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__place input[type=radio] {
+    display: none;
+  }
+}
+
+// STEP 3 COTTAGE-TYPE
+
+.booking-form {
+
+  &__cottage-type {
+    text-align: center;
+    background-color: #fff;
+  }
+
+  &__cottage-type label {
+    display: block;
+    width: 100%;
+  }
+
+  &__cottage-type input[type=radio] {
+    display: none;
+  }
+
+  &__cottage-type-description-icons {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .booking-form {
+    &__cottage-type label {
+      display: inline-block;
+      width: 20%;
+    }
+  }
+}
