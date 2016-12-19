@@ -44,7 +44,7 @@
   <form>
   <section class="booking-step">
     <p class="booking-step__step-counter">ШАГ 1</p>
-    <h2 class="booking-step__title">Дата отдыха</h2>
+    <h2 class="booking-step__title" id="data-step">Дата отдыха</h2>
     <div class="booking-form__data-inner">
      <div class="booking-form__data-check-inout">
        <label><h3 class="booking-form__data-title">Дата въезда</h3>
@@ -92,32 +92,61 @@
   <section class="booking-step">
     <p class="booking-step__step-counter">ШАГ 4</p>
     <h2 class="booking-step__title">Персональная информация</h2>
-    <input type="text" placeholder="ИМЯ">
-    <input type="text" placeholder="ФАМИЛИЯ">
-    <label><input type="tel" placeholder="НОМЕР ТЕЛЕФОНА"> Мы свяжемся с вами в случае небходимости.</label>
-    <label><input type="email" placeholder="E-MAIL"> На этот адрес мы вышлем вам подверждение о забронированном номере</label>
+    <div class="booking-form__personal-info-inner">
+      <input type="text" placeholder="ИМЯ">
+      <input type="text" placeholder="ФАМИЛИЯ">
+      <label>
+        <input type="tel" placeholder="НОМЕР ТЕЛЕФОНА"> Мы свяжемся с вами в случае небходимости.
+      </label>
+      <label>
+        <input type="email" placeholder="E-MAIL"> На этот адрес мы вышлем вам подверждение о забронированном номере
+      </label>
+    </div>
   </section>
 
   <section class="booking-step">
     <p class="booking-step__step-counter">ШАГ 5</p>
     <h2 class="booking-step__title">Способ оплаты</h2>
 
- <!--  Не хватает оберток -->
-    <label><input type="radio" name="payment-way" value="pay-on-place"> По приезду</label>
-    <p>Вы можете внести оплату по факту заселения</p>
-    <label><input type="radio" name="payment-way" value="pay-now"> Сейчас</label>
-    <p>Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
 
-    <label>Номер карты <input type="number" placeholder="0000-0000-0000-0000"></label>
-    <label>Код CVV <input type="number" placeholder="123"></label>
-    <label>Фамилия владельца карты <input type="text" placeholder="VLADIMIR VLADIMIROV"></label>
-    <label>Действует до <input type="number" placeholder="01 / 2018"></label>
-  <!-- Конец -->
-
-    <div class="booking-form__payment-summ">
-      <h3 class="booking-form__payment-summ-title">К оплате</h3>
-      <p class="booking-form__payment-summ-txt">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
+    <div class="booking-form__payment-way-item">
+      <label>
+        <input type="radio" name="payment-way" value="pay-on-place"> По приезду
+      </label>
+      <p>Вы можете внести оплату по факту заселения</p>
     </div>
+
+
+    <div class="booking-form__payment-way-item">
+      <label>
+        <input type="radio" name="payment-way" value="pay-now"> Сейчас
+      </label>
+      <p>Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
+
+
+      <label for="cart-number">номер карты
+        <input id="cart-number" type="number" placeholder="0000-0000-0000-0000">
+      </label>
+      <label for="name-cartholder">фамилия владельца карты
+        <input id="name-cartholder" type="text" placeholder="vladimir vladimirov">
+      </label>
+      <label for="cvv-code">код cvv
+        <input id="cvv-code" type="number" placeholder="123">
+      </label>
+      <label for="cart-valid">действует до
+        <input id="cart-valid" name="calendar" placeholder="01 / 2018">
+      </label>
+    </div>
+
+
+    <div class="booking-form__payment-total">
+      <div class="booking-form__payment-total-inner">
+        <h3 class="booking-form__payment-total-title">К оплате</h3>
+        <p class="booking-form__payment-total-txt">Пожалуйста, <a href="#data-step">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате</p>
+      </div>
+    </div>
+
+    </div>   <!-- <-это див от иннера -->
 
 
    <a href="" class="btn btn--bg-green">Забронировать</a>
@@ -134,9 +163,9 @@
     <div class="page-footer__logo-social">
       <a href="#" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
       <div class="page-footer__socials">
-        <a href="#" class="page-footer__social"><img src="" alt="vk"></a>
-        <a href="#" class="page-footer__social"><img src="" alt="inst"></a>
-        <a href="#" class="page-footer__social"><img src="" alt="fb"></a>
+        <a href="https://vk.com/irnbru" class="page-footer__social-vk"></a>
+        <a href="#" class="page-footer__social-inst"></a>
+        <a href="#" class="page-footer__social-fb"></a>
       </div>
     </div>
     <div class="page-footer__contacts">

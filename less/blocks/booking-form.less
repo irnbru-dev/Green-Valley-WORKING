@@ -98,7 +98,7 @@
 
     width: 13px;
     height: 8px;
-    left: 125px;
+    left: 120px;
     transform: rotate(-45deg);
 
     border-left: 5px solid @green;
@@ -114,6 +114,86 @@
     display: none;
   }
 }
+
+// STEP 4 PERSONAL-INFO
+
+.booking-form {
+
+  &__personal-info-inner {
+    margin: 0 25px;
+  }
+
+  &__personal-info-inner input {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__personal-info-inner input[type="text"] {
+    margin-bottom: 20px;
+  }
+
+  &__personal-info-inner label {
+    margin-bottom: 20px;
+    color: red;
+  }
+}
+
+//  STEP 5 PAYMENT
+  .booking-form {
+
+    &__payment-way-item {
+      background-color: #fff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    &__payment-way-item input[type=radio] {
+      display: none;
+    }
+
+    &__payment-way-item label {
+      cursor: pointer;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__payment-way-item label input {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 10px;
+      padding: 20px;
+    }
+
+    &__payment-way-item p {
+      display: none;
+    }
+
+    &__payment-total {
+      background-color: #fff;
+    }
+  }
+
+// TOTAL
+  .booking-form {
+
+    &__payment-total-title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__payment-total-txt {
+      text-align: left;
+    }
+
+    &__payment-total-txt a {
+      text-decoration: none;
+      border-bottom: 1px dashed black;
+    }
+  }
 
 @media (min-width: 768px) {
 
