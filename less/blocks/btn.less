@@ -34,7 +34,26 @@
 
   &__hidden {
     display: none;
-}
+  }
+
+  &--icon-calendar {
+    padding-left: 50px;
+    position: relative;
+  }
+
+  &--icon-calendar:before {
+    position: absolute;
+
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    left: 25px;
+
+    background-image: url(../../img/icon-calendar.png);
+    background-repeat: no-repeat;
+  }
 }
 
 // .btn {

@@ -51,10 +51,27 @@
 
   &__item-socials-list {
     list-style: none;
+    margin-left: -20px;
+
+    li {
+      display: inline-block;
+    }
   }
 
-  &__item-socials-list li {
-    display: inline-block;
+  &__item-socials-link {
+    border: 1px solid red;
+    background-image: url(../../img/footer-vk.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+    &--vk {
+      background-image: url(../../img/footer-vk.png);
+    }
+
+    &--fb {
+      background-image: url(../../img/footer-fb.png);
+    }
   }
 
   &__item-txt {
