@@ -26,13 +26,13 @@
   }
 
   &__item-title {
+    text-align: center;
     font-weight: normal;
-    order: 1;
   }
 
   &__item-title-txt {
-    order: 2;
     margin-top: -10px;
+    text-align: center;
   }
 
   &__item-title-txt--orange-col {
@@ -40,8 +40,11 @@
   }
 
   &__img-box {
-    order: 3;
     width: 100%;
+  }
+
+  &__img-box-lg {
+    display: none;
   }
 
   &__img-box img {
@@ -49,12 +52,10 @@
   }
 
   &__item-txt {
-    order: 4;
     padding: 30px 15px;
   }
 
   &__btns {
-    order: 5;
     margin-bottom: 10px;
   }
 
@@ -72,7 +73,7 @@
     }
 
     &__item-txt {
-      // margin: 0 100px;
+      margin: 0 200px;
     }
 
     &__btns a {
@@ -101,8 +102,27 @@
       flex-direction: row;
     }
 
+    &__img-box-sm {
+      display: none;
+    }
+
+    &__img-box-lg {
+      display: inline-block;
+    }
+
     &__img-box {
-      order: 5;
+      width: 700px;
+      // margin: 0 auto;
+    }
+
+    &__img-box img {
+      width: 700px;
+    }
+
+    &__txt-box-lg {
+      padding: 0 70px;
+      text-align: center;
+      border: 1px solid red;
     }
   }
 }

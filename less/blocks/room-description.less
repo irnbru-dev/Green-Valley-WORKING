@@ -26,12 +26,17 @@
     width: 100%;
   }
 
-  &__list {
+  &__list-col, &__list {
     list-style: none;
+  }
+
+  &__list-col:last-child {
+    margin-top: -15px;
   }
 
   &__list-item {
     position: relative;
+    margin-left: -25px;
   }
 
   &__list-item:before {
@@ -62,6 +67,16 @@
 
   &__facilities {
     padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .room-description {
+
+    &__list-col {
+      display: inline-block;
+      margin-right: 100px;
+    }
   }
 }
 

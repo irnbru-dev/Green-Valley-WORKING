@@ -52,6 +52,7 @@
 // STEP 2 PLACE
 
 .booking-form {
+
   &__place {
     text-align: center;
     width: 310px;
@@ -59,19 +60,60 @@
     border: 1px solid #ebebeb;
   }
 
-  &__place label {
+  &__place-item {
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
+    // border: 2px solid pink;
+    border-right: 1px solid #ebebeb;
+    width: 150px;
+
+    &:last-child {
+      border-right: 0;
+    }
   }
 
-  &__place input[type=radio] {
+  &__place-item input[type=radio] {
     display: none;
   }
-}
+
+  &__place-title {
+    color: #4c4c4c;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+    &__place-cottage--icon {
+      // content: "";
+      display: block;
+      background-image: url(../../img/place-cottage.png);
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      opacity: .4;
+      transition: .2s opacity;
+      width: 80px;
+      height: 70px;
+    }
+
+    &__place-hotel--icon {
+      // content: "";
+      display: block;
+      background-image: url(../../img/place-cottage.png);
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      opacity: .4;
+      transition: .2s opacity;
+      width: 80px;
+      height: 70px;
+    }
+  }
+
 
 // STEP 3 COTTAGE-TYPE
 
@@ -121,23 +163,31 @@
 
   &__personal-info-inner {
     margin: 0 25px;
-  }
 
-  &__personal-info-inner input {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    text-transform: uppercase;
+    input {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 50px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      color: #4c4c4c;
+      margin-bottom: 10px;
+    }
   }
 
   &__personal-info-inner input[type="text"] {
     margin-bottom: 20px;
   }
 
-  &__personal-info-inner label {
-    margin-bottom: 20px;
-    color: red;
-  }
+  // &__personal-info-inner label {
+  //   margin-bottom: 20px;
+  //   border: 1px solid red;
+  //   color: red;
+  // }
 }
 
 //  STEP 5 PAYMENT
@@ -192,6 +242,10 @@
     &__payment-total-txt a {
       text-decoration: none;
       border-bottom: 1px dashed black;
+    }
+
+    &__payment-total-txt-success {
+      display: none;
     }
   }
 

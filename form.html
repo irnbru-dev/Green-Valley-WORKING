@@ -66,8 +66,16 @@
     <p class="booking-step__step-counter">ШАГ 2</p>
     <h2 class="booking-step__title">Место проживания</h2>
     <div class="booking-form__place">
-      <label><input type="radio" name="place">Отель</label>
-      <label><input type="radio" name="place">Коттедж</label>
+      <label class="booking-form__place-item">
+        <input type="radio" name="place">
+        <h3 class="booking-form__place-title">Отель</h3>
+        <i class="booking-form__place-hotel--icon"></i>
+      </label>
+      <label class="booking-form__place-item">
+        <input type="radio" name="place" checked>
+        <h3 class="booking-form__place-title">Коттедж</h3>
+        <i class="booking-form__place-cottage--icon"></i>
+      </label>
     </div>
   </section>
 
@@ -96,10 +104,12 @@
       <input type="text" placeholder="ИМЯ">
       <input type="text" placeholder="ФАМИЛИЯ">
       <label>
-        <input type="tel" placeholder="НОМЕР ТЕЛЕФОНА"> Мы свяжемся с вами в случае небходимости.
+        <input type="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+          <p>Мы свяжемся с вами в случае небходимости.</p>
       </label>
       <label>
-        <input type="email" placeholder="E-MAIL"> На этот адрес мы вышлем вам подверждение о забронированном номере
+        <input type="email" placeholder="E-MAIL">
+          <p>На этот адрес мы вышлем вам подверждение о забронированном номере</p>
       </label>
     </div>
   </section>
@@ -142,8 +152,9 @@
     <div class="booking-form__payment-total">
       <div class="booking-form__payment-total-inner">
         <h3 class="booking-form__payment-total-title">К оплате</h3>
-        <p class="booking-form__payment-total-txt">Пожалуйста, <a href="#data-step">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате</p>
+        <p class="booking-form__payment-total-txt booking-form__payment-total-txt-error">Пожалуйста, <a href="#data-step">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате</p>
       </div>
+      <p class="booking-form__payment-total-txt-success">14 000 руб.</p>
     </div>
 
     </div>   <!-- <-это див от иннера -->
