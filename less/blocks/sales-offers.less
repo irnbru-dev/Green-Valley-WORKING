@@ -31,7 +31,8 @@
     padding-left: 10px;
     padding-bottom: 10px;
     width: 295px;
-    background-color: #fff;
+    background-color: @white-09;
+
   }
 
   &__item-block-title {
@@ -47,5 +48,13 @@
     font-size: 16;
     line-height: 20px;
     color: @gray-diff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sales-offers {
+    &__item {
+      margin: 0 80px;
+    }
   }
 }

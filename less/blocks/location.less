@@ -78,16 +78,34 @@
 @media (min-width: 1200px) {
   .location {
 
+    &__map {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     &__items-inner {
       display: flex;
       flex-direction: row;
-      width: 50%;
+      width: 80%;
       margin: 0 auto;
     }
 
     &__item {
-      border: 1px solid red;
       margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__bus {
+      border: 2px solid pink;
+      flex-grow: 2;
+    }
+
+    &__train {
+      border: 2px solid pink;
+      flex-grow: 1;
     }
 
     &__item-txt {
