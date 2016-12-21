@@ -53,10 +53,10 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
     server: './',                                           // папка, которая будет «корнем» сервера (путь из константы)
     port: 3000,                                             // порт, на котором будет работать сервер
-    startPath: 'index.html',                                // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'index.html',                                // файл, который буде открываться в браузере при старте сервера
     // open:false - прописать для запрета открытия браузера
 
-    // startPath: 'roomslist.html',
+    startPath: 'roomslist.html',
     // startPath: 'singleroom.html',
     // startPath: 'form.html',
   });
