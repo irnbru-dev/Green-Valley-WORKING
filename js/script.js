@@ -52,7 +52,7 @@ for (var i=0; i<tabs.length; i++) {
 
 
 // Sales-offers owl-carousel
-  $('#offers').owlCarousel({
+  $('#sales-offers').owlCarousel({
     items: 1,
     nav: false
   });
