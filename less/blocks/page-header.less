@@ -1,14 +1,10 @@
 .page-header {
   border-bottom: 1px solid #ebebeb;
-// @media (min-width: @screen-xs) {
+
   &__inner {
     min-width: 320px;
-    padding: 0 30px;
-    // margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // border: 1px solid red;
+    // padding: 0 30px;
+    text-align: center;
   }
 
   &__phone-link {
@@ -30,16 +26,20 @@
 .main-logo {
   display: inline-block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-nav {
 
   &__item {
-    display: none;
+    padding: 0;
+    display: block;
+    margin-left: -30px;
   }
 
   &__link {
-    display: none;
+    width: 100%;
+    display: block;
     padding-right: 18px;
     color: @gray-diff;
     text-decoration: none;
@@ -55,14 +55,94 @@
 .page-header .btn {
   display: none;
 }
-// }
 
+
+.main-nav {
+
+  &__toggler {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: -4px;
+  }
+
+  &__toggler-link {
+    display: inline-block;
+    padding: 21px 6px;
+    text-align: center;
+  }
+
+  &__toggler-link span {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: @orange;
+    box-shadow: inset 0 0 5px #ffbea1;
+  }
+
+  &__toggler-link span:before, &__toggler-link span:after {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: 9px 0;
+    width: 28px;
+    height: 4px;
+    background-color: @orange;
+    box-shadow: inset 0 0 5px #ffbea1;
+  }
+
+  &__toggler-link span:before {
+    top: 9px;
+  }
+
+//выпадающее меню
+  // &__nav {
+  //   display: none;
+  //   font-size: 14px;
+  //   line-height: 40px;
+  // }
+
+  // &__list {
+  //   margin: 0 auto;
+  //   padding: 0;
+  // }
+
+  // &__item {
+  //   text-align: center;
+  //   list-style-type: none;
+  //   border: 1px solid @gray;
+  // }
+
+  // &__item:last-child {
+  //   margin-right: 0;
+  // }
+
+  // &__link {
+  //   text-decoration: none;
+  //   color: @gray;
+  //   text-transform: uppercase;
+  // }
+
+  // &__link:hover {
+  //   color: @orange;
+  //   transition-duration: 0.5s;
+  // }
+
+}
 @media (min-width: 768px) {
 }
 
 @media (min-width: 1200px) {
 
   .page-header {
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
 
     .main-logo {
       margin: 0;
@@ -89,6 +169,7 @@
 
     &__item {
       display: inline-block;
+      margin: 0;
     }
 
     &__link {
@@ -97,6 +178,10 @@
 
     &__link:hover {
       color: @orange;
+    }
+
+    &__toggler {
+      display: none;
     }
 
   }

@@ -1,5 +1,15 @@
  $(document).ready(function(){
 
+
+  // Home-page header burger
+
+$('.main-nav__toggler-link').click(function(e) {
+  e.preventDefault();
+  $('.main-nav__nav').toggle();
+});
+
+// Home-page gallery owl-carousel
+
 $('#gallery-thumbs').owlCarousel({
   items:3,
   loop:true,
@@ -27,7 +37,7 @@ $('#gallery-thumbs a').on('click', function(e){
 });
 
 
-// Rest-type-switcher табы home-page
+// Rest-type-switcher табы
 
 var tabs = document.querySelectorAll('.rest-type-switcher__tabs .rest-type-switcher__tab-item a');
 var restType = document.querySelectorAll('.rest-type-switcher__type .rest-type-switcher__type-item');
