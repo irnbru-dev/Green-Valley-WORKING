@@ -58,10 +58,12 @@ for (var i=0; i<tabs.length; i++) {
   });
 
   // Cards carousel
+
   $('#cards-owl').owlCarousel({
     responsive: {
       768: {
         items: 2,
+        center:true,
         nav: false
       }
     }

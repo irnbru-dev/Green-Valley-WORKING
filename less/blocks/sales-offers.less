@@ -49,6 +49,24 @@
     line-height: 20px;
     color: @gray-diff;
   }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .owl-dot {
+    display: inline-block;
+    border: 2px solid @orange;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active, &:hover {
+      background-color: @orange;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -56,5 +74,5 @@
     &__item {
       margin: 0 80px;
     }
-  }
+  }}
 }

@@ -95,7 +95,7 @@
       margin: 0 auto;
       margin-bottom: 15px;
       opacity: .4;
-      transition: .2s opacity;
+      // transition: .2s opacity;
       width: 80px;
       height: 70px;
     }
@@ -103,12 +103,11 @@
     &__place-hotel--icon {
       // content: "";
       display: block;
-      background-image: url(../../img/place-cottage.png);
+      background-image: url(../../img/place-hotel-icon.png);
       background-repeat: no-repeat;
       margin: 0 auto;
       margin-bottom: 15px;
-      opacity: .4;
-      transition: .2s opacity;
+      opacity: 1;
       width: 80px;
       height: 70px;
     }
@@ -193,15 +192,44 @@
 //  STEP 5 PAYMENT
   .booking-form {
 
+    &__paymenr-way-inner {
+      margin: 0 25px;
+    }
+
     &__payment-way-item {
       background-color: #fff;
       margin-bottom: 20px;
+      padding: 10px;
       text-transform: uppercase;
+    }
+
+    &__payment-title {
+      font-weight: bold;
+      position: relative;
+      padding-left: 60px;
+      &:before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+
+        width: 13px;
+        height: 8px;
+        left: 10px;
+        transform: rotate(-45deg);
+
+        border-left: 5px solid @green;
+        border-bottom: 5px solid @green;
+        }
+      }
+
+    &__payment-personal-info-inner {
+      margin: 0 25px;
     }
 
     &__payment-way-item input[type=radio] {
       display: none;
     }
+
 
     &__payment-way-item label {
       cursor: pointer;
@@ -210,12 +238,21 @@
     }
 
     &__payment-way-item label input {
+      // width: 100%;
       display: block;
-      width: 100%;
       text-align: center;
       text-transform: uppercase;
       margin-top: 10px;
-      padding: 20px;
+      line-height: 50px;
+    }
+
+    &__payment-way-item label[for=cart-number] input {
+      width: 100%;
+    }
+
+
+    &__payment-way-item label[for=name-cartholder] input {
+      width: 100%;
     }
 
     &__payment-way-item p {
@@ -233,10 +270,14 @@
     &__payment-total-title {
       text-align: center;
       text-transform: uppercase;
+      padding-top: 30px;
     }
 
     &__payment-total-txt {
       text-align: left;
+      padding-bottom: 30px;
+      margin: 0 25px;
+      margin-bottom: 20px;
     }
 
     &__payment-total-txt a {
@@ -246,6 +287,27 @@
 
     &__payment-total-txt-success {
       display: none;
+    }
+
+    &__payment-total-txt span{
+      position: relative;
+      padding-left: 13px;
+      &:before {
+        position: absolute;
+        background-image: url(../../img/total-error-icon.png);
+        background-repeat: none;
+        content:"";
+        display: inline-block;
+
+        width: 13px;
+        height: 12px;
+        left: -3px;
+        top: 1px;
+      }
+    }
+
+    &__btn-inner {
+      margin: 0 20px;
     }
   }
 
