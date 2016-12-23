@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Valey - Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header__inner">
+
+    <a href="index.html" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
+
+    <div class="main-nav">
+      <nav class="main-nav__nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Номера</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Коттедж</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Ресторан</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Отдых</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-header__contacts">
+      <a href="tel:+78120000000" class="page-header__phone-link">+7 812 777-55-88</a>
+      <div class="page-header__address">г.Санкт-Петербург, Приморское ш.600</div>
+    </div>
+
+    <div>
+      <a href="form.html" class="btn btn--bg-orange btn--icon-calendar btn--bd-radius">Забронировать</a>
+    </div>
+
+    <div class="main-nav__toggler">
+      <a class="main-nav__toggler-link" href="#">
+        <span></span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="booking-top">
+    <h1 class="booking-top__title">Бронирование</h1>
+    <div class="booking-top__title-txt">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78120000000" class="booking-top__phone-link">+7 812 777-55-88</a>
+    </div>
+</section>
+
+  <form>
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 1</p>
+    <h2 class="booking-step__title" id="data-step">Дата отдыха</h2>
+    <div class="booking-form__data-inner">
+     <div class="booking-form__data-check-inout">
+       <label><h3 class="booking-form__data-title">Дата въезда</h3>
+       <input type="number" min="1" max="31" placeholder="ДД"></label>
+       <input type="number" min="1" max="12" placeholder="ММ">
+       <input type="number" min="2000" max="2030" placeholder="ГГГГ">
+      </div>
+      <div class="booking-form__data-check-inout">
+        <label><h3 class="booking-form__data-title">Дата выезда</h3>
+        <input type="number" min="1" max="31" placeholder="ДД"></label>
+        <input type="number" min="1" max="12" placeholder="ММ">
+        <input type="number" min="2000" max="2030" placeholder="ГГГГ">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 2</p>
+    <h2 class="booking-step__title">Место проживания</h2>
+    <div class="booking-form__place">
+      <label class="booking-form__place-item">
+        <input type="radio" name="place">
+        <h3 class="booking-form__place-title">Отель</h3>
+        <i class="booking-form__place-hotel--icon"></i>
+      </label>
+      <label class="booking-form__place-item">
+        <input type="radio" name="place" checked>
+        <h3 class="booking-form__place-title">Коттедж</h3>
+        <i class="booking-form__place-cottage--icon"></i>
+      </label>
+    </div>
+  </section>
+
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 3</p>
+    <h2 class="booking-step__title">Тип коттеджа</h2>
+    <div class="booking-form__cottage-type">
+      <label>Флагман<input type="radio" name="cottage-type" value="flagman"></label>
+      <label>Озерный<input type="radio" name="cottage-type" value="ozerny"></label>
+      <label>Ольховка<input type="radio" name="cottage-type" value="olhovka"></label>
+      <label>Портовый<input type="radio" name="cottage-type" value="portovy"></label>
+    </div>
+    <div class="booking-form__cottage-type-description-icons">
+      <span>Площадь 100м</span>
+      <span>3 комнаты</span>
+      <span>5 спальных мест</span>
+      <span>Раздельный санузел</span>
+      <span>WI-FI</span>
+    </div>
+  </section>
+
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 4</p>
+    <h2 class="booking-step__title">Персональная информация</h2>
+    <div class="booking-form__personal-info-inner">
+      <input type="text" placeholder="ИМЯ">
+      <input type="text" placeholder="ФАМИЛИЯ">
+      <label>
+        <input type="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+          <p>Мы свяжемся с вами в случае небходимости.</p>
+      </label>
+      <label>
+        <input type="email" placeholder="E-MAIL">
+          <p>На этот адрес мы вышлем вам подверждение о забронированном номере</p>
+      </label>
+    </div>
+  </section>
+
+  <section class="booking-step">
+    <p class="booking-step__step-counter">ШАГ 5</p>
+    <h2 class="booking-step__title">Способ оплаты</h2>
+
+    <div class="booking-form__payment-way-inner">
+    <div class="booking-form__payment-way-item">
+      <label class="booking-form__payment-title">
+        <input type="radio" name="payment-way" value="pay-on-place"> По приезду
+      </label>
+      <p>Вы можете внести оплату по факту заселения</p>
+    </div>
+
+
+    <div class="booking-form__payment-way-item">
+      <label class="booking-form__payment-title">
+        <input type="radio" name="payment-way" value="pay-now"> Сейчас
+      </label>
+      <p>Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
+
+      <div class="booking-form__payment-personal-info-inner">
+        <label for="cart-number">номер карты
+          <input id="cart-number" type="number" placeholder="0000-0000-0000-0000">
+        </label>
+        <label for="name-cartholder">фамилия владельца карты
+          <input id="name-cartholder" type="text" placeholder="vladimir vladimirov">
+        </label>
+        <label for="cvv-code">код cvv
+          <input id="cvv-code" type="number" placeholder="123">
+        </label>
+        <label for="cart-valid">действует до
+          <input id="cart-valid" name="calendar" placeholder="01 / 2018">
+        </label>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="booking-form__payment-total">
+      <div class="booking-form__payment-total-inner">
+        <h3 class="booking-form__payment-total-title">К оплате</h3>
+        <p class="booking-form__payment-total-txt booking-form__payment-total-txt-error"><span>Пожалуйста, <a href="#data-step">выберите дату</a></span> въезда и выезда, чтобы увидеть сумму к оплате</p>
+      </div>
+      <p class="booking-form__payment-total-txt-success">14 000 руб.</p>
+    </div>
+
+    </div>   <!-- <-это див от иннера -->
+
+    <div class="booking-form__btn-inner">
+      <a href="" class="btn btn--bg-green-squad">Забронировать</a>
+    </div>
+  </div>
+</section>
+</form>
+
+<footer class="page-footer">
+  <div class="page-footer__inner">
+
+    <div class="page-footer__address">
+      <p class="page-footer__address">г.Санкт-Петербург<br>Приморское ш.600</p>
+    </div>
+    <div class="page-footer__logo-social">
+      <a href="#" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
+      <div class="page-footer__socials">
+        <a href="https://vk.com/irnbru" class="page-footer__social-vk"></a>
+        <a href="#" class="page-footer__social-inst"></a>
+        <a href="#" class="page-footer__social-fb"></a>
+      </div>
+    </div>
+    <div class="page-footer__contacts">
+      <p><a href="tel:+78120000000" class="page-footer__phone-link">+7 812 777-55-88</a><br>
+      <span class="page-footer__mail">info@greenvalley.ru</span></p>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
+

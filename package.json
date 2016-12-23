@@ -17,10 +17,13 @@
     "browser-sync": "^2.14.0",
     "css-mqpacker": "^5.0.1",
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-less": "^3.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
     "ttf2woff": "^2.0.1",
     "ttf2woff2": "^2.0.3"
   }
