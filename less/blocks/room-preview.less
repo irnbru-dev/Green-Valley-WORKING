@@ -5,6 +5,31 @@
   &__inner {
     min-width: 320px;
     padding: 0 10px;
+    padding-top: 45px;
     margin: 0 auto;
+  }
+}
+  @media (min-width: 768px) {
+
+  .room-preview {
+
+    &__cards-inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+.room-preview .preview-card:nth-child(3) {
+  display: none;
+}
+
+.room-preview {
+  @media (min-width: 1200px) {
+    .preview-card:nth-child(3) {
+      display: inline-block;
+    }
   }
 }

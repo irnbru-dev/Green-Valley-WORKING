@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Green Valey - Single Room</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
@@ -11,7 +13,7 @@
 <header class="page-header">
   <div class="page-header__inner">
 
-    <a href="#" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
+    <a href="index.html" class="main-logo"><img src="img/logo.png" alt="Green Valley"></a>
 
     <div class="main-nav">
       <nav class="main-nav__nav">
@@ -23,7 +25,6 @@
           <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <span class="main-nav__toggler"></span>
     </div>
 
     <div class="page-header__contacts">
@@ -31,7 +32,15 @@
       <div class="page-header__address">г.Санкт-Петербург, Приморское ш.600</div>
     </div>
 
-    <a href="form.html" class="btn btn--bg-orange btn--icon-calendar">Забронировать</a>
+    <div>
+      <a href="form.html" class="btn btn--bg-orange btn--icon-calendar btn--bd-radius">Забронировать</a>
+    </div>
+
+    <div class="main-nav__toggler">
+      <a class="main-nav__toggler-link" href="#">
+        <span></span>
+      </a>
+    </div>
 
   </div>
 </header>
@@ -85,12 +94,8 @@
 <div class="room-preview">
   <div class="room-preview__inner">
 
-    <ul class="preview-card-switcher__tab">
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-    </ul>
 
-    <div class="place-picker__cards-inner">
+    <div class="room-preview__cards-inner">
 
       <div class="preview-card">
         <div class="preview-card__img">
@@ -123,8 +128,12 @@
       </div>
 
     </div>
-    </div>
 
+    </div>
+    <div class="owl__dots">
+      <a href="#" class="owl__dot owl__dots  owl__dot--active"></a>
+      <a href="#" class="owl__dot"></a>
+    </div>
   </div>
 </div>
 
@@ -151,6 +160,9 @@
   </div>
 </footer>
 
-
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
