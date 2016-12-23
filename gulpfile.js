@@ -155,9 +155,10 @@ gulp.task('build', gulp.series(
 gulp.task('serve', gulp.series('build', function() {
 
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
-    server: './',                                           // папка, которая будет «корнем» сервера (путь из константы)
+    server: './build',                                           // папка, которая будет «корнем» сервера (путь из константы)
+    baseDir: './build',
     port: 3000,                                             // порт, на котором будет работать сервер
-    startPath: 'build/index.html',                          // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'build/index.html',                          // файл, который буде открываться в браузере при старте сервера
   });
 
   gulp.watch(                                               // следим за HTML
@@ -176,7 +177,10 @@ gulp.task('serve', gulp.series('build', function() {
   );
 
   gulp.watch(                                               // следим за JS
-    'src/js/**.js',
+    ('src/js/**.js',
+    'src/js/jquery-3.1.0.min.js',
+    'src/js/jquery-migrate-1.4.1.min.js',
+    'src/js/owl.carousel.min.js'),
     gulp.series('js', reloader)                             // при изменении файлов запускаем пересборку JS и обновление в браузере
 );
 
