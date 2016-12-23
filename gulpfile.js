@@ -133,7 +133,7 @@ gulp.task('img', function() {
 // ЗАДАЧА: Конкатенация и углификация Javascript
 gulp.task('js', function () {
   return gulp.src([           // список обрабатываемых файлов
-  'src/js/script.js'
+  'src/js/*.js'
 ])
     .pipe(concat('script.min.js'))
     .pipe(uglify())
@@ -177,10 +177,7 @@ gulp.task('serve', gulp.series('build', function() {
   );
 
   gulp.watch(                                               // следим за JS
-    ('src/js/**.js',
-    'src/js/jquery-3.1.0.min.js',
-    'src/js/jquery-migrate-1.4.1.min.js',
-    'src/js/owl.carousel.min.js'),
+    'src/js/**.js',
     gulp.series('js', reloader)                             // при изменении файлов запускаем пересборку JS и обновление в браузере
 );
 
