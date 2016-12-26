@@ -94,7 +94,7 @@
       background-repeat: no-repeat;
       margin: 0 auto;
       margin-bottom: 15px;
-      opacity: .4;
+      opacity: 1;
       // transition: .2s opacity;
       width: 80px;
       height: 70px;
@@ -126,25 +126,28 @@
   &__cottage-type label {
     display: block;
     width: 100%;
-    position: relative;
+    // position: relative;
     // border: 1px solid red;
 
     padding: 40px 0;
   }
 
-  &__cottage-type label:before {
-    position: absolute;
-    display: inline-block;
-    content: "";
+  &__cottage-type span {
+    position: relative;
 
-    width: 13px;
-    height: 8px;
-    left: 120px;
-    transform: rotate(-45deg);
+    &:before {
+      position: absolute;
+      display: inline-block;
+      content: "";
 
-    border-left: 5px solid @green;
-    border-bottom: 5px solid @green;
+      width: 13px;
+      height: 8px;
+      left: -35px;
+      transform: rotate(-45deg);
 
+      border-left: 5px solid @green;
+      border-bottom: 5px solid @green;
+    }
   }
 
   &__cottage-type input[type=radio] {
@@ -154,7 +157,55 @@
   &__cottage-type-description-icons {
     display: none;
   }
+
+  @media (min-width: 768px) {
+
+    &__cottage-type {
+      padding: 30px 0;
+    }
+
+    &__cottage-type label {
+      border-right: 1px solid #ebebeb;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &__cottage-type span {
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+
+        width: 13px;
+        height: 8px;
+        left: 43%;
+        top: 40px;
+
+        transform: rotate(-45deg);
+
+        border-left: 5px solid @green;
+        border-bottom: 5px solid @green;
+      }
+
+      @media (min-width: 1200px) {
+
+        &__cottage-type {
+          margin: 0 50px;
+        }
+
+
+      }
+    }
+  }
 }
+
 
 // STEP 4 PERSONAL-INFO
 
@@ -170,29 +221,38 @@
       line-height: 50px;
       text-transform: uppercase;
     }
+
     p {
       font-size: 14px;
       line-height: 18px;
       color: #4c4c4c;
       margin-bottom: 10px;
     }
-  }
 
-  &__personal-info-inner input[type="text"] {
-    margin-bottom: 20px;
-  }
+    input[type="text"] {
+      margin-bottom: 20px;
+    }
 
-  // &__personal-info-inner label {
-  //   margin-bottom: 20px;
-  //   border: 1px solid red;
-  //   color: red;
-  // }
+    @media (min-width: 768px) {
+
+      input[type="text"] {
+        display: inline-block;
+        width: 45%;
+      }
+
+      label {
+        display: inline-block;
+        width: 45%;
+        margin-right: 2%;
+      }
+    }
+  }
 }
 
 //  STEP 5 PAYMENT
   .booking-form {
 
-    &__paymenr-way-inner {
+    &__payment-way-inner {
       margin: 0 25px;
     }
 
@@ -319,4 +379,4 @@
       width: 20%;
     }
   }
-}
+  }

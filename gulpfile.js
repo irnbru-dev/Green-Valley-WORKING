@@ -158,7 +158,7 @@ gulp.task('serve', gulp.series('build', function() {
     server: './build',                                           // папка, которая будет «корнем» сервера (путь из константы)
     baseDir: './build',
     port: 3000,                                             // порт, на котором будет работать сервер
-    // startPath: 'build/index.html',                       // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'build/form.html',                       // файл, который буде открываться в браузере при старте сервера
   });
 
   gulp.watch(                                               // следим за HTML
