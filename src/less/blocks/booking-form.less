@@ -253,7 +253,7 @@
   .booking-form {
 
     &__payment-way-inner {
-      margin: 0 25px;
+      padding: 0 25px;
     }
 
     &__payment-way-item {
@@ -322,6 +322,13 @@
     &__payment-total {
       background-color: #fff;
     }
+
+    @media (min-width: 768px) {
+
+      &__payment-title-txt {
+        display: inline-block;
+      }
+    }
   }
 
 // TOTAL
@@ -377,6 +384,17 @@
     &__cottage-type label {
       display: inline-block;
       width: 20%;
+    }
+
+    &__payment-way-inner {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__payment-total {
+      margin-right: 15px;
     }
   }
   }

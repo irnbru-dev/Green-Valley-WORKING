@@ -139,35 +139,38 @@
     <h2 class="booking-step__title">Способ оплаты</h2>
 
     <div class="booking-form__payment-way-inner">
-    <div class="booking-form__payment-way-item">
-      <label class="booking-form__payment-title">
-        <input type="radio" name="payment-way" value="pay-on-place"> По приезду
-      </label>
-      <p>Вы можете внести оплату по факту заселения</p>
-    </div>
+
+      <div class="booking-form__payment-way-items-inner">
+
+        <div class="booking-form__payment-way-item">
+          <label class="booking-form__payment-title">
+            <input type="radio" name="payment-way" value="pay-on-place"> По приезду
+          </label>
+          <p class="booking-form__payment-title-txt">Вы можете внести оплату по факту заселения</p>
+        </div>
 
 
-    <div class="booking-form__payment-way-item">
-      <label class="booking-form__payment-title">
-        <input type="radio" name="payment-way" value="pay-now"> Сейчас
-      </label>
-      <p>Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
+        <div class="booking-form__payment-way-item">
+          <label class="booking-form__payment-title">
+            <input type="radio" name="payment-way" value="pay-now"> Сейчас
+          </label>
+          <p class="booking-form__payment-title-txt">Прямо сейчас вы можете внести оплату с помощью банковской карты</p>
 
-      <div class="booking-form__payment-personal-info-inner">
-        <label for="cart-number">номер карты
-          <input id="cart-number" type="number" placeholder="0000-0000-0000-0000">
-        </label>
-        <label for="name-cartholder">фамилия владельца карты
-          <input id="name-cartholder" type="text" placeholder="vladimir vladimirov">
-        </label>
-        <label for="cvv-code">код cvv
-          <input id="cvv-code" type="number" placeholder="123">
-        </label>
-        <label for="cart-valid">действует до
-          <input id="cart-valid" name="calendar" placeholder="01 / 2018">
-        </label>
-      </div>
-    </div>
+          <div class="booking-form__payment-personal-info-inner">
+            <label for="cart-number">номер карты
+              <input id="cart-number" type="number" placeholder="0000-0000-0000-0000">
+            </label>
+            <label for="name-cartholder">фамилия владельца карты
+              <input id="name-cartholder" type="text" placeholder="vladimir vladimirov">
+            </label>
+            <label for="cvv-code">код cvv
+              <input id="cvv-code" type="number" placeholder="123">
+            </label>
+            <label for="cart-valid">действует до
+              <input id="cart-valid" name="calendar" placeholder="01 / 2018">
+            </label>
+          </div>
+        </div>
     </div>
 
 
@@ -184,8 +187,8 @@
     <div class="booking-form__btn-inner">
       <a href="" class="btn btn--bg-green-squad">Забронировать</a>
     </div>
-  </div>
-</section>
+
+  </section>
 </form>
 
 <footer class="page-footer">
@@ -211,6 +214,6 @@
 </footer>
 
 
+<script src="js/script.min.js"></script>
 </body>
 </html>
-
